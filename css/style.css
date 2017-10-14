@@ -437,7 +437,8 @@ h5 {
 p {
   color: #0b0b0b;
   font-weight: 400;
-  line-height: 2rem; }
+  line-height: 2rem;
+  margin-top: 25px; }
 
 .arrow {
   object-fit: contain;
@@ -480,6 +481,7 @@ p {
   margin: auto;
   margin-bottom: 35px;
   margin-top: 35px;
+  text-align: center;
   text-transform: uppercase;
   width: 75px; }
 
@@ -492,6 +494,48 @@ input {
   display: block;
   margin-top: 10px;
   width: 75%; }
+
+#thermostat-tips-page .native-ad {
+  background: #292937;
+  border-radius: 2.5%;
+  height: 150px;
+  margin-top: 25px;
+  padding: 25px 0;
+  position: relative;
+  width: 100%; }
+  #thermostat-tips-page .native-ad__image {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float: left;
+    object-fit: contain;
+    margin-left: 5%;
+    width: 20%; }
+  #thermostat-tips-page .native-ad__copy {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: #292937;
+    float: right;
+    height: auto;
+    margin: 0 5%;
+    width: 60%; }
+    #thermostat-tips-page .native-ad__copy h6 {
+      color: #fff;
+      margin-bottom: 10px; }
+    #thermostat-tips-page .native-ad__copy a {
+      color: #e9a92f;
+      text-decoration: underline; }
+  #thermostat-tips-page .native-ad__logo {
+    bottom: 7.5px;
+    object-fit: contain;
+    position: absolute;
+    right: 7.5px;
+    width: 10%; }
 
 header {
   align-items: center;
@@ -540,6 +584,11 @@ header {
     text-decoration: underline; }
 
 #sign-up-page .sign-up-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#thermostat-tips-page .content-section {
   margin: 0 10%;
   margin-top: 50px;
   width: 80%; }

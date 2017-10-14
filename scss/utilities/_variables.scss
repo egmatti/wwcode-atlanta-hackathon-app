@@ -22,6 +22,8 @@ $color-box-shadow: rgba($black, 0.15);
 
 $color-input: $black;
 $color-button: $mustard;
+$color-ad: $midnight;
+$color-ad-link: $mustard;
 
 $color-header: $mustard;
 $color-footer: $white;
@@ -63,8 +65,12 @@ $border-button: $border-size solid $color-button;
 $margin-page: 0 10%;
 $margin-section-vertical: 50px;
 
+$margin-paragraph: 25px;
 $margin-input: 25px;
 $margin-button: 35px;
+$margin-ad: 25px;
+
+$padding-ad: 25px 0;
 
 
 // HEIGHTS AND WIDTHS

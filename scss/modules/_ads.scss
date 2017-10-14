@@ -1,0 +1,48 @@
+// ==========================================
+// ADS
+// ==========================================
+
+#thermostat-tips-page .native-ad {
+  background: $color-ad;
+  border-radius: 2.5%;
+  height: 150px;
+  margin-top: $margin-ad;
+  padding: $padding-ad;
+  position: relative;
+  width: 100%;
+
+  @include e(image) {
+    @include vertical-align();
+    float: left;
+    object-fit: contain;
+    margin-left: 5%;
+    width: 20%;
+  }
+
+  @include e(copy) {
+    @include vertical-align();
+    background: $color-ad;
+    float: right;
+    height: auto;
+    margin: 0 5%;
+    width: 60%;
+
+    h6 {
+      color: $white;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: $color-ad-link;
+      text-decoration: underline;
+    }
+  }
+
+  @include e(logo) {
+    bottom: 7.5px;
+    object-fit: contain;
+    position: absolute;
+    right: 7.5px;
+    width: 10%;
+  }
+}
