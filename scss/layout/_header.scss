@@ -3,7 +3,12 @@
 // ==========================================
 
 header {
+  @include flexbox($justify: space-between);
   background: $color-header;
   height: 80px;
   width: 100%;
+}
+
+.title {
+  text-align: center;
 }

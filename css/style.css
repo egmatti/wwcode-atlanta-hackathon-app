@@ -439,9 +439,44 @@ p {
   font-weight: 400;
   line-height: 2rem; }
 
+.arrow {
+  object-fit: contain;
+  width: 55px; }
+
+.hamburger-menu-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px; }
+  .hamburger-menu-container:hover > .hamburger-menu__row, .hamburger-menu-container:hover > .hamburger-menu__row--top, .hamburger-menu-container:hover > .hamburger-menu__row--middle, .hamburger-menu-container:hover > .hamburger-menu__row--bottom {
+    border-bottom: 1.25px solid #0b0b0b;
+    height: 8px; }
+    .hamburger-menu-container:hover > .hamburger-menu__row--top {
+      margin-top: -8px; }
+
+.hamburger-menu__row, .hamburger-menu__row--top, .hamburger-menu__row--middle, .hamburger-menu__row--bottom {
+  border-bottom: 1.25px solid #fff;
+  height: 6px; }
+  .hamburger-menu__row--top {
+    margin-top: -6px;
+    width: 50%; }
+  .hamburger-menu__row--middle {
+    width: 66%; }
+  .hamburger-menu__row--bottom {
+    width: 50%; }
+
 header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
   background: #e9a92f;
   height: 80px;
   width: 100%; }
+
+.title {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,50 @@
+// ==========================================
+// ICONS
+// ==========================================
+
+.arrow {
+  object-fit: contain;
+  width: 55px;
+}
+
+.hamburger-menu-container {
+  @include flexbox($direction: column);
+  // border: 1.25px solid $black;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+
+  &:hover {
+    // border: 1.25px solid $black;
+  }
+
+  &:hover > .hamburger-menu__row {
+    border-bottom: 1.25px solid $black;
+    height: 8px;
+
+    @include m(top) {
+      margin-top: -8px;
+    }
+  }
+}
+
+.hamburger-menu__row {
+  border-bottom: 1.25px solid $white;
+  height: 6px;
+
+  @include m(top) {
+    @extend .hamburger-menu__row;
+    margin-top: -6px;
+    width: 50%;
+  }
+
+  @include m(middle) {
+    @extend .hamburger-menu__row;
+    width: 66%;
+  }
+
+  @include m(bottom) {
+    @extend .hamburger-menu__row;
+    width: 50%;
+  }
+}
