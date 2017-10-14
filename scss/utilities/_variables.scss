@@ -1,0 +1,79 @@
+// ==========================================
+// VARIABLES
+// ==========================================
+
+// COLORS
+
+// Color Descriptions
+$white: #fff;
+$black: #0b0b0b;
+$gray: lighten($black, 75%);
+$mustard: #e9a92f;
+$midnight: #292937;
+
+// Color Functions
+$color-body: $white;
+
+$color-headline: $white;
+$color-body-text: $black;
+$color-selection: lighten($mustard, 30%);
+$color-box-shadow: rgba($black, 0.15);
+
+$color-nav-item: $black;
+$color-nav-item-hover: $mustard;
+
+$color-arrows-floor-plans: $black;
+$color-dots-floor-plans: $mustard;
+
+$color-header: $mustard;
+$color-footer: $white;
+
+
+// FONTS
+
+// Font Stacks
+$font-stack-primary: 'Lato', sans-serif;
+$font-stack-secondary: 'Montserrat', sans-serif;
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// Font Sizes
+$base-font-size: 16px;
+
+// Letter Spacing
+
+// Line Height
+$line-height-body-text: 2rem;
+
+
+// BORDERS
+
+$border-size: 1.5px;
+
+$border-white: 1.5px solid $white;
+$border-black: 1.5px solid $black;
+$border-gray: 1.5px solid $gray;
+$border-mustard: 1.5px solid $mustard;
+$border-midnight: 1.5px solid $midnight;
+
+
+// MARGINS AND PADDING
+$padding-nav-item: 0 20px;
+
+
+// HEIGHTS AND WIDTHS
+
+
+// PATHS
+
+$path-image: "../images";
+
+
+// BREAKPOINTS
+
+$breakpoint-small: 0px;
+$breakpoint-medium: 767px;
+$breakpoint-large: 1025px;
