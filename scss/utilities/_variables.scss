@@ -14,7 +14,7 @@ $midnight: #292937;
 // Color Functions
 $color-body: $white;
 
-$color-headline: $white;
+$color-headline: $black;
 $color-body-text: $black;
 $color-selection: lighten($mustard, 30%);
 $color-box-shadow: rgba($black, 0.15);
@@ -27,6 +27,8 @@ $color-dots-floor-plans: $mustard;
 
 $color-header: $mustard;
 $color-footer: $white;
+
+$color-header-title: $white;
 
 
 // FONTS

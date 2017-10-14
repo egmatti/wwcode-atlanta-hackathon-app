@@ -414,7 +414,7 @@ a {
   outline: none; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #0b0b0b;
   font-weight: 300;
   margin: 0;
   text-transform: uppercase; }
@@ -477,6 +477,7 @@ header {
   width: 100%; }
 
 .title {
+  color: #fff;
   text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
