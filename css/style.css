@@ -468,6 +468,31 @@ p {
   .hamburger-menu__row--bottom {
     width: 50%; }
 
+.round-button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #e9a92f;
+  border-radius: 100%;
+  color: #e9a92f;
+  font-weight: 300;
+  height: 75px;
+  margin: auto;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  text-transform: uppercase;
+  width: 75px; }
+
+label {
+  display: block;
+  margin-top: 25px; }
+
+input {
+  border: 1px solid #0b0b0b;
+  display: block;
+  margin-top: 10px;
+  width: 75%; }
+
 header {
   align-items: center;
   display: flex;
@@ -479,5 +504,21 @@ header {
 .title {
   color: #fff;
   text-align: center; }
+
+#login-page .login-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+.switch-form {
+  margin-top: 25px; }
+  .switch-form a {
+    color: #e9a92f;
+    text-decoration: underline; }
+
+#sign-up-page .sign-up-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */

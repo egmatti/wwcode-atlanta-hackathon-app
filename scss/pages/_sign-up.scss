@@ -1,18 +1,9 @@
 // ==========================================
-// LOGIN PAGE
+// SIGN UP PAGE
 // ==========================================
 
-#login-page .login-section {
+#sign-up-page .sign-up-section {
   margin: $margin-page;
   margin-top: $margin-section-vertical;
   width: $width-page;
-}
-
-.switch-form {
-  margin-top: 25px;
-
-  a {
-    color: $color-link;
-    text-decoration: underline;
-  }
 }

@@ -1,7 +1,3 @@
 // ==========================================
-// MODULES INDEX
+// SIGN UP PAGE
 // ==========================================
-
-@import "icons";
-@import "buttons";
-@import "forms";

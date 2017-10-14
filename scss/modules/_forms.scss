@@ -1,0 +1,15 @@
+// ==========================================
+// FORMS
+// ==========================================
+
+label {
+  display: block;
+  margin-top: $margin-input;
+}
+
+input {
+  border: $border-input;
+  display: block;
+  margin-top: 10px;
+  width: 75%;
+}

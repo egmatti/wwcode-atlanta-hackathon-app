@@ -1,0 +1,17 @@
+// ==========================================
+// BUTTONS
+// ==========================================
+
+.round-button {
+  @include flexbox();
+  border: $border-button;
+  border-radius: 100%;
+  color: $color-button;
+  font-weight: $font-weight-light;
+  height: $height-button;
+  margin: auto;
+  margin-bottom: $margin-button;
+  margin-top: $margin-button;
+  text-transform: uppercase;
+  width: $width-button;
+}

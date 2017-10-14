@@ -1,5 +1,5 @@
 <!-- ==========================================
-LOGIN PAGE
+SIGN UP PAGE
 ========================================== -->
 
 <!DOCTYPE html>
@@ -7,11 +7,11 @@ LOGIN PAGE
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Drawdown App</title>
+    <title>Sign Up | Drawdown App</title>
     <script src="https://use.fontawesome.com/ab03b8820e.js"></script>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body id="login-page">
+  <body id="sign-up-page">
 
     <header>
       <img class="arrow" src="images/arrow.svg"/>
@@ -23,21 +23,24 @@ LOGIN PAGE
       </div>
     </header>
 
-    <section class="login-section">
-      <h4>Login</h4>
+    <section class="sign-up-section">
+      <h4>Sign Up</h4>
       <form>
-        <label for"first-name">Email:</label>
+        <label for"first-name">First Name:</label>
+        <input type="text" name="first-name"></input>
+        <label for"last-name">Last Name:</label>
+        <input type="text" name="last-name"></input>
+        <label for"email">Email:</label>
         <input type="text" name="email"></input>
-        <label for"password">Password:</label>
+        <label for"email">Password:</label>
         <input type="text" name="password"></input>
         <div class="round-button">Submit</div>
       </form>
-      <p class="switch-form">Don't have an account yet? <a>Sign up!</a></p>
+      <p class="switch-form">Already have an account? <a>Login!</a></p>
     </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
   </body>
 </html>

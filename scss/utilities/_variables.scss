@@ -16,14 +16,12 @@ $color-body: $white;
 
 $color-headline: $black;
 $color-body-text: $black;
+$color-link: $mustard;
 $color-selection: lighten($mustard, 30%);
 $color-box-shadow: rgba($black, 0.15);
 
-$color-nav-item: $black;
-$color-nav-item-hover: $mustard;
-
-$color-arrows-floor-plans: $black;
-$color-dots-floor-plans: $mustard;
+$color-input: $black;
+$color-button: $mustard;
 
 $color-header: $mustard;
 $color-footer: $white;
@@ -53,21 +51,25 @@ $line-height-body-text: 2rem;
 
 // BORDERS
 
-$border-size: 1.5px;
+$border-size: 1px;
 
-$border-white: 1.5px solid $white;
-$border-black: 1.5px solid $black;
-$border-gray: 1.5px solid $gray;
-$border-mustard: 1.5px solid $mustard;
-$border-midnight: 1.5px solid $midnight;
+$border-input: $border-size solid $color-input;
+$border-button: $border-size solid $color-button;
 
 
 // MARGINS AND PADDING
-$padding-nav-item: 0 20px;
+$margin-page: 0 10%;
+$margin-section-vertical: 50px;
+
+$margin-input: 25px;
+$margin-button: 35px;
 
 
 // HEIGHTS AND WIDTHS
+$width-page: 80%;
 
+$height-button: 75px;
+$width-button: 75px;
 
 // PATHS
 
