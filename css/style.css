@@ -505,6 +505,29 @@ header {
   color: #fff;
   text-align: center; }
 
+#home-page {
+  background: #e9a92f; }
+
+#home-page header .arrow {
+  visibility: hidden; }
+
+#home-page header .hamburger-menu-container {
+  visibility: hidden; }
+
+#home-page .logo-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: -webkit-calc(100vh - 80px);
+  height: -moz-calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  width: 100%; }
+
+#home-page .round-button {
+  border: 1px solid #fff;
+  color: #fff; }
+
 #login-page .login-section {
   margin: 0 10%;
   margin-top: 50px;

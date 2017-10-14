@@ -1,3 +1,28 @@
 // ==========================================
 // HOME PAGE
 // ==========================================
+
+#home-page {
+  background: $color-home-page;
+}
+
+#home-page header .arrow {
+  visibility: hidden;
+}
+
+#home-page header .hamburger-menu-container {
+  visibility: hidden;
+}
+
+#home-page .logo-section {
+  @include flexbox($direction: column);
+  height: -webkit-calc(100vh - 80px);
+  height:   -moz-calc(100vh - 80px);
+  height:     calc(100vh - 80px);
+  width: 100%;
+}
+
+#home-page .round-button {
+  border: $border-size solid $white;
+  color: $white;
+}
