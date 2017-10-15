@@ -1,30 +1,18 @@
-<!-- ==========================================
-QUIZ PAGE
-========================================== -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz | Inhabit App</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Montserrat:300,300i,400,400i,700,700i" rel="stylesheet">
-    <script src="https://use.fontawesome.com/ab03b8820e.js"></script>
+    <title>InHabit Quiz</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="css/style.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/ab03b8820e.js"></script>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <!-- Need to put this in external CSS -->
-  <style>
-    .hidden {
-      display: none;
-    }
-  </style>
   <body id="quiz1-page">
 
     <header>
       <a href="sign-up.html"><img class="arrow-white" src="images/arrow-white.svg"/></a>
-      <img class="arrow-black" src="images/arrow-black.svg"/>
-      <h4 class="title">Inhabit</h4>
+      <h4 class="title">InHabit</h4>
       <div class="hamburger-menu-container">
         <div class="hamburger-menu__row--top"></div>
         <div class="hamburger-menu__row--middle"></div>
@@ -35,26 +23,22 @@ QUIZ PAGE
 
     <div class="menu">
       <ul class="nav">
-        <a class="nav__item" href="index.html"><li>Home</li></a>
-        <a class="nav__item" href="about.html"><li>About</li></a>
-        <a class="nav__item" href="quiz.html"><li>Quiz</li></a>
-        <a class="nav__item" href="profile.html"><li>Profile</li></a>
-        <a class="nav__item" href="more-tips.html"><li>Tips</li></a>
+      <a class="nav__item" href="index.html"><li>Home</li></a>
+      <a class="nav__item" href="about.html"><li>About</li></a>
+      <a class="nav__item" href="quiz1.html"><li>Quiz</li></a>
+      <a class="nav__item" href="profile.html"><li>Profile</li></a>
+      <a class="nav__item" href="tips.html"><li>Tips</li></a>
       </ul>
     </div>
 
-    <section id="gameWrapper" class="hidden">
-      <p id="question_num"></p>
-      <form id="quiz_question" action=""></form>
+    <section class="quizSection">
+      <section id="gameWrapper" class="hidden">
+        <form id="quiz_question" action=""></form>
+      </section>
+      <div id="results_button" class="hidden round-button">See Results</div>
     </section>
-    <div id="results_button" class="hidden round-button">See Results</div>
 
-    <!--firebase-->
-    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
-
-    <!--javascript-->
-    <script src="js/quiz.js"></script>
-
+    <script src="../../quiz_test.js"></script>
   </body>
 
 </html>

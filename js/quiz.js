@@ -111,11 +111,10 @@ function startQuiz() {
 }
 
 function showQuestion() {
-  $("#question_num").html(displayQuestion + 1);
   myQuestion = "";
-  myQuestion = myQuestion + "<p class='bold'>" + myListofQuestions[displayQuestion].question + "</p>";
+  myQuestion = myQuestion + "<p class='bold center_q'>" + myListofQuestions[displayQuestion].question + "</p>";
   myListofQuestions[displayQuestion].choices.forEach(function(choice) {
-    myQuestion = myQuestion + "<input type='radio' name=" + displayQuestion + " value=" + choice + " + class=\"selectable\">" + choice + "<br>";
+    myQuestion +="<input type='radio' id='" + choice + "' name='" + displayQuestion + "' value='" + choice + "' + class='selectable'><label for='" + choice + "' class='round-button'>" + choice + "</label>";
   });
 
   $("#quiz_question").html(myQuestion);

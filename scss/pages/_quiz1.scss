@@ -2,6 +2,25 @@
 // QUIZ PAGE 1
 // ==========================================
 
-#quiz1-page {
+#quiz1-page .quizSection {
+  margin: $margin-page;
+  margin-top: $margin-section-vertical;
+  width: $width-page;
+  display: inline-block;
+}
 
+#quiz1-page .hidden{
+  display:  none;
+}
+
+#quiz1-page a {
+  text-decoration: none;
+}
+
+#quiz1-page input[type="radio"] {
+  display: none;
+}
+
+#quiz1-page .center_q {
+  text-align: center;
 }
