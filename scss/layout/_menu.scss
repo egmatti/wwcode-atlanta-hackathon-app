@@ -16,6 +16,10 @@
   top: 37.5%;
 }
 
+.nav__item {
+  text-decoration: none;
+}
+
 .nav__item li {
   @extend h2;
   color: $color-nav-item;

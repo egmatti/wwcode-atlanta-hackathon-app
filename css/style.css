@@ -571,6 +571,9 @@ header {
   transform: translateY(-50%);
   top: 37.5%; }
 
+.nav__item {
+  text-decoration: none; }
+
 .nav__item li {
   color: #fff;
   list-style: none;
@@ -583,7 +586,10 @@ header {
 #home-page {
   background: #e9a92f; }
 
-#home-page header .arrow {
+#home-page header .arrow-white {
+  visibility: hidden; }
+
+#home-page header .arrow-black {
   visibility: hidden; }
 
 #home-page header .hamburger-menu-container {
@@ -598,6 +604,9 @@ header {
   height: -moz-calc(100vh - 80px);
   height: calc(100vh - 80px);
   width: 100%; }
+
+#home-page a {
+  text-decoration: none; }
 
 #home-page .round-button {
   border: 1px solid #fff;

@@ -6,7 +6,11 @@
   background: $color-home-page;
 }
 
-#home-page header .arrow {
+#home-page header .arrow-white {
+  visibility: hidden;
+}
+
+#home-page header .arrow-black {
   visibility: hidden;
 }
 
@@ -20,6 +24,10 @@
   height:   -moz-calc(100vh - 80px);
   height:     calc(100vh - 80px);
   width: 100%;
+}
+
+#home-page a {
+  text-decoration: none;
 }
 
 #home-page .round-button {
