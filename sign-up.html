@@ -40,20 +40,104 @@ SIGN UP PAGE
       <h4>Sign Up</h4>
       <form>
         <label for"first-name">First Name:</label>
-        <input type="text" name="first-name"></input>
+        <input id="firstName" type="text" name="first-name"></input>
         <label for"last-name">Last Name:</label>
-        <input type="text" name="last-name"></input>
+        <input id="lastName" type="text" name="last-name"></input>
         <label for"email">Email:</label>
-        <input type="text" name="email"></input>
+        <input id="email" type="text" name="email"></input>
         <label for"email">Password:</label>
-        <input type="text" name="password"></input>
-        <div class="round-button">Submit</div>
+        <input id="password" type="text" name="password"></input>
+        <div id="submit" class="round-button">Submit</div>
       </form>
       <p class="switch-form">Already have an account? <a href="login.html">Login!</a></p>
     </section>
 
-
+    <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--javascript-->
     <script type="text/javascript" src="js/script.js"></script>
+
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.5.1/firebase.js"></script>
+
+  <script>
+
+      var firebase;
+      var database;
+
+      function init() {
+
+          // 1. Initialize Firebase
+          var config = {
+              apiKey: "AIzaSyCGkDV0SZ5P4jZkRhezkvd-Vm0CqEk22ug",
+              authDomain: "drawdown-88164.firebaseapp.com",
+              databaseURL: "https://drawdown-88164.firebaseio.com",
+              projectId: "drawdown-88164",
+              storageBucket: "drawdown-88164.appspot.com",
+              messagingSenderId: "847299270208"
+          };
+
+          firebase.initializeApp(config);
+
+          database = firebase.database();
+
+      }
+
+      init();
+
+      //Function that pushes user data to Firebase
+      function createUserData (){
+
+          // 2. Grabs user input
+          var userFirstName = $("#firstName").val().trim();
+          var userLastName = $("#lastName").val().trim();
+          var userEmail = $("#email").val().trim();
+          var userPassword = $("#password").val().trim();
+
+          firebase.auth().createUserWithEmailAndPassword(userEmail, userPassword)
+              .then(function(user) {
+                  console.log("User created!!!");
+
+                  if (user) {
+                      console.log("User has successfully signed in!!!" + JSON.stringify(user));
+
+                      //Display Quiz Form
+                      //$("#quizForm").removeClass('hidden');
+
+                      firebase.database().ref('users/' + user.uid).set({
+                          userFirstName: userFirstName,
+                          userLastName: userLastName,
+                          userEmail: userEmail,
+                          userPassword: userPassword
+                      });
+
+                      //move to next page
+                      window.localStorage.setItem("drawdownToken", user.uid);
+
+                      console.log();
+
+                      window.location = "quiz.html";
+                  } else {
+                      console.log("No user signed in...");
+                  }
+
+              }).catch(function(error) {
+              // Handle Errors here.
+              var errorCode = error.code;
+              var errorMessage = error.message;
+              console.log("An error occurred creating the user: " + error.message);
+          });
+      }
+
+      //On click of submit button, grab user data and push to firebase.
+      $("#submit").on("click", function(event) {
+
+          event.preventDefault();
+          createUserData();
+      });
+
+  </script>
+
   </body>
 </html>

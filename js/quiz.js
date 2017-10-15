@@ -76,6 +76,30 @@ var myListofQuestions = [
     }
 ];
 
+var firebase;
+var database;
+
+function init() {
+    // 1. Initialize Firebase
+
+    var config = {
+        apiKey: "AIzaSyCGkDV0SZ5P4jZkRhezkvd-Vm0CqEk22ug",
+        authDomain: "drawdown-88164.firebaseapp.com",
+        databaseURL: "https://drawdown-88164.firebaseio.com",
+        projectId: "drawdown-88164",
+        storageBucket: "drawdown-88164.appspot.com",
+        messagingSenderId: "847299270208"
+    };
+
+    firebase.initializeApp(config);
+
+    database = firebase.database();
+}
+
+init();
+
+
+
 startQuiz();
 
 function startQuiz() {
@@ -102,18 +126,40 @@ function showQuestion() {
   });
 }
 
+var results = [];
+
 function processQuestion(idx) {
+
+    //console.log("index",counter);
   var pointsToAdd = myListofQuestions[displayQuestion].addPoints[idx]
   var thisCategory = myListofQuestions[displayQuestion].category;
   var currCategoryTotal = categories[thisCategory];
   totalPoints += pointsToAdd;
   categories[thisCategory] = currCategoryTotal + pointsToAdd;
 
+
   if (displayQuestion < myListofQuestions.length - 1) {
-    displayQuestion++;
-    showQuestion();
+
+
+      results.push({
+          question: myListofQuestions[displayQuestion].question,
+          answers: myListofQuestions[displayQuestion].choices[idx]
+      });
+
+      displayQuestion++;
+      showQuestion();
   }
+
   else {
+
+      //push result to firebase
+      var userUid = window.localStorage.getItem("drawdownToken");
+
+      firebase.database().ref('users/' + userUid).update({
+          quizResults: results,
+          categoryScores: categories
+      });
+
     $("#gameWrapper").toggleClass("hidden");
     $("#results_button").toggleClass("hidden");
     console.log("done");
