@@ -1,28 +1,31 @@
 // ==========================================
-// LOCAL PRODUCE TIPS PAGE
+// MORE TIPS PAGE
 // ==========================================
 
-#local-produce-tips-page .content-section {
+#more-tips-page .content-section {
   margin: $margin-page;
   margin-top: $margin-section-vertical;
   width: $width-page;
 }
 
-#local-produce-tips-page .actions {
-  display: block;
-  font-weight: $font-weight-bold;
+#more-tips-page a {
+  text-decoration: none;
+}
+
+#more-tips-page h6 {
   margin-top: $margin-paragraph;
 }
 
-#local-produce-tips-page ol {
+#more-tips-page ol {
   margin-top: 10px;
+  margin-bottom: 35px;
 }
 
-#local-produce-tips-page ol li {
+#more-tips-page ol li {
   line-height: $line-height-body-text;
   margin-left: 5%;
 }
 
-#local-produce-tips-page a {
+#more-tips-page a {
   text-decoration: none;
 }

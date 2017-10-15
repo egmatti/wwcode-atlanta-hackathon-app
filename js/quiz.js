@@ -1,3 +1,7 @@
+// ==========================================
+// QUIZ PAGE
+// ==========================================
+
 var displayQuestion = 0;
 var categories = {"solar": 0,
                   "transport": 0,

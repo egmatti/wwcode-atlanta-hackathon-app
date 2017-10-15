@@ -1,0 +1,26 @@
+// ==========================================
+// GARBAGE TIPS PAGE
+// ==========================================
+
+#garbage-tips-page .content-section {
+  margin: $margin-page;
+  margin-top: $margin-section-vertical;
+  width: $width-page;
+}
+
+#garbage-tips-page a {
+  text-decoration: none;
+}
+
+#garbage-tips-page ol {
+  margin-top: $margin-paragraph;
+}
+
+#garbage-tips-page ol li {
+  line-height: $line-height-body-text;
+  margin-left: 5%;
+}
+
+#garbage-tips-page a {
+  text-decoration: none;
+}
