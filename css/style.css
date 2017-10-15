@@ -605,6 +605,10 @@ header {
   height: calc(100vh - 80px);
   width: 100%; }
 
+#home-page .logo {
+  object-fit: contain;
+  width: 350px; }
+
 #home-page a {
   text-decoration: none; }
 
@@ -634,25 +638,169 @@ header {
   position: relative;
   width: 80%; }
 
+#profile-page .house-map {
+  position: absolute;
+  z-index: -15; }
+
 #profile-page .house {
   object-fit: contain;
   width: 100%; }
 
-#profile-page .link-lightbulb {
-  height: 53px;
-  left: 17px;
+#profile-page .link-solar-panel {
+  clip-path: polygon(50% 42%, 0% 100%, 100% 100%);
+  height: 42%;
+  left: 6%;
   position: absolute;
-  top: 185px;
-  width: 73px;
+  top: -7%;
+  width: 71%;
+  z-index: 10;
+  -webkit-clip-path: polygon(50% 42%, 0% 100%, 100% 100%); }
+
+#profile-page .div-solar-panel {
+  background: #cacaca;
+  clip-path: polygon(50% 42%, 0% 100%, 100% 100%);
+  height: 42%;
+  left: 6%;
+  position: absolute;
+  top: -7%;
+  width: 71%;
+  z-index: -10;
+  -webkit-clip-path: polygon(50% 42%, 0% 100%, 100% 100%); }
+
+#profile-page .link-lightbulb {
+  height: 12%;
+  left: 6%;
+  position: absolute;
+  top: 35%;
+  width: 24%;
   z-index: 10; }
 
 #profile-page .div-lightbulb {
   background: #e9a92f;
-  height: 53px;
-  left: 17px;
+  height: 12%;
+  left: 6%;
   position: absolute;
-  top: 185px;
-  width: 73px;
+  top: 35%;
+  width: 24%;
+  z-index: -10; }
+
+#profile-page .link-faucet {
+  height: 12%;
+  left: 30%;
+  position: absolute;
+  top: 35%;
+  width: 23%;
+  z-index: 10; }
+
+#profile-page .div-faucet {
+  background: #fc3932;
+  height: 12%;
+  left: 30%;
+  position: absolute;
+  top: 35%;
+  width: 23%;
+  z-index: -10; }
+
+#profile-page .link-thermostat {
+  height: 12%;
+  left: 53%;
+  position: absolute;
+  top: 35%;
+  width: 23%;
+  z-index: 10; }
+
+#profile-page .div-thermostat {
+  background: #4ede31;
+  height: 12%;
+  left: 53%;
+  position: absolute;
+  top: 35%;
+  width: 23%;
+  z-index: -10; }
+
+#profile-page .link-meat {
+  height: 12%;
+  left: 6%;
+  position: absolute;
+  top: 47%;
+  width: 24%;
+  z-index: 10; }
+
+#profile-page .div-meat {
+  background: #4ede31;
+  height: 12%;
+  left: 6%;
+  position: absolute;
+  top: 47%;
+  width: 24%;
+  z-index: -10; }
+
+#profile-page .link-produce {
+  height: 12%;
+  left: 30%;
+  position: absolute;
+  top: 47%;
+  width: 23%;
+  z-index: 10; }
+
+#profile-page .div-produce {
+  background: #e9a92f;
+  height: 12%;
+  left: 30%;
+  position: absolute;
+  top: 47%;
+  width: 23%;
+  z-index: -10; }
+
+#profile-page .link-recycle {
+  height: 11%;
+  left: 6%;
+  position: absolute;
+  top: 59%;
+  width: 24%;
+  z-index: 10; }
+
+#profile-page .div-recycle {
+  background: #fc3932;
+  height: 11%;
+  left: 6%;
+  position: absolute;
+  top: 59%;
+  width: 24%;
+  z-index: -10; }
+
+#profile-page .link-garbage {
+  height: 11%;
+  left: 30%;
+  position: absolute;
+  top: 59%;
+  width: 23%;
+  z-index: 10; }
+
+#profile-page .div-garbage {
+  background: #4ede31;
+  height: 11%;
+  left: 30%;
+  position: absolute;
+  top: 59%;
+  width: 23%;
+  z-index: -10; }
+
+#profile-page .link-car {
+  height: 23%;
+  left: 53%;
+  position: absolute;
+  top: 47%;
+  width: 41%;
+  z-index: 10; }
+
+#profile-page .div-car {
+  background: #e9a92f;
+  height: 23%;
+  left: 53%;
+  position: absolute;
+  top: 47%;
+  width: 41%;
   z-index: -10; }
 
 #profile-page .score-value {

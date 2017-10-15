@@ -26,6 +26,11 @@
   width: 100%;
 }
 
+#home-page .logo {
+  object-fit: contain;
+  width: 350px;
+}
+
 #home-page a {
   text-decoration: none;
 }
