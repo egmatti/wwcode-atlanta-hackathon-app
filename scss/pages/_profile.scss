@@ -12,3 +12,20 @@
   object-fit: contain;
   width: 100%;
 }
+
+#profile-page .score-value {
+  @extend h1;
+  color: $color-score;
+  display: block;
+  font-size: 5rem;
+  font-weight: $font-weight-bold;
+  margin-top: -25px;
+  text-align: center;
+}
+
+#profile-page .score-label {
+  @extend h6;
+  display: block;
+  font-size: 0.75rem;
+  text-align: center;
+}
