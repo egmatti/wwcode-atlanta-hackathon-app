@@ -23,9 +23,9 @@ $(".x").click(function() {
 // BUTTON COLOR CHANGE
 
 $(".round-button").click(function() {
-   $(".round-button").css({"background-color": "#e9a92f", "color": "#fff"});
+   $(".round-button").css({"background-color": "#80be78", "color": "#fff"});
 });
 
 $(".menu .round-button").click(function() {
-   $(".menu .round-button").css({"background-color": "#fff", "color": "#e9a92f"});
+   $(".menu .round-button").css({"background-color": "#fff", "color": "#80be78"});
 });
