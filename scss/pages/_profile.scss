@@ -1,3 +1,14 @@
 // ==========================================
 // PROFILE PAGE
 // ==========================================
+
+#profile-page .content-section {
+  margin: $margin-page;
+  margin-top: $margin-section-vertical;
+  width: $width-page;
+}
+
+#profile-page .house {
+  object-fit: contain;
+  width: 100%;
+}
