@@ -7,3 +7,22 @@
   margin-top: $margin-section-vertical;
   width: $width-page;
 }
+
+#local-produce-tips-page .actions {
+  display: block;
+  font-weight: $font-weight-bold;
+  margin-top: $margin-paragraph;
+}
+
+#local-produce-tips-page ol {
+  margin-top: 10px;
+}
+
+#local-produce-tips-page ol li {
+  line-height: $line-height-body-text;
+  margin-left: 5%;
+}
+
+#local-produce-tips-page a {
+  text-decoration: none;
+}

@@ -500,7 +500,7 @@ input {
   margin-top: 10px;
   width: 75%; }
 
-#thermostat-tips-page .native-ad {
+.native-ad {
   background: #292937;
   border-radius: 2.5%;
   height: 150px;
@@ -508,7 +508,7 @@ input {
   padding: 25px 0;
   position: relative;
   width: 100%; }
-  #thermostat-tips-page .native-ad__image {
+  .native-ad__image {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -518,7 +518,7 @@ input {
     object-fit: contain;
     margin-left: 5%;
     width: 20%; }
-  #thermostat-tips-page .native-ad__copy {
+  .native-ad__copy {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -529,13 +529,13 @@ input {
     height: auto;
     margin: 0 5%;
     width: 60%; }
-    #thermostat-tips-page .native-ad__copy h6 {
+    .native-ad__copy h6 {
       color: #fff;
       margin-bottom: 10px; }
-    #thermostat-tips-page .native-ad__copy a {
+    .native-ad__copy a {
       color: #e9a92f;
       text-decoration: underline; }
-  #thermostat-tips-page .native-ad__logo {
+  .native-ad__logo {
     bottom: 7.5px;
     object-fit: contain;
     position: absolute;
@@ -628,9 +628,64 @@ header {
   margin-top: 50px;
   width: 80%; }
 
+#household-recycling-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#household-recycling-tips-page a {
+  text-decoration: none; }
+
+#local-produce-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#local-produce-tips-page .actions {
+  display: block;
+  font-weight: 700;
+  margin-top: 25px; }
+
+#local-produce-tips-page ol {
+  margin-top: 10px; }
+
+#local-produce-tips-page ol li {
+  line-height: 2rem;
+  margin-left: 5%; }
+
+#local-produce-tips-page a {
+  text-decoration: none; }
+
+#plant-diet-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#plant-diet-tips-page a {
+  text-decoration: none; }
+
 #thermostat-tips-page .content-section {
   margin: 0 10%;
   margin-top: 50px;
   width: 80%; }
+
+#thermostat-tips-page a {
+  text-decoration: none; }
+
+#transportation-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#transportation-tips-page a {
+  text-decoration: none; }
+
+#water-consumption-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#water-consumption-tips-page a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
