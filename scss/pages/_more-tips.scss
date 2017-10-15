@@ -1,0 +1,31 @@
+// ==========================================
+// MORE TIPS PAGE
+// ==========================================
+
+#more-tips-page .content-section {
+  margin: $margin-page;
+  margin-top: $margin-section-vertical;
+  width: $width-page;
+}
+
+#more-tips-page a {
+  text-decoration: none;
+}
+
+#more-tips-page h6 {
+  margin-top: $margin-paragraph;
+}
+
+#more-tips-page ol {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+#more-tips-page ol li {
+  line-height: $line-height-body-text;
+  margin-left: 5%;
+}
+
+#more-tips-page a {
+  text-decoration: none;
+}

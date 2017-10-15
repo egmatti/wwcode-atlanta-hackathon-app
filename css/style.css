@@ -628,12 +628,47 @@ header {
   margin-top: 50px;
   width: 80%; }
 
+#profile-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#profile-page .house {
+  object-fit: contain;
+  width: 100%; }
+
+#garbage-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#garbage-tips-page a {
+  text-decoration: none; }
+
+#garbage-tips-page ol {
+  margin-top: 25px; }
+
+#garbage-tips-page ol li {
+  line-height: 2rem;
+  margin-left: 5%; }
+
+#garbage-tips-page a {
+  text-decoration: none; }
+
 #household-recycling-tips-page .content-section {
   margin: 0 10%;
   margin-top: 50px;
   width: 80%; }
 
 #household-recycling-tips-page a {
+  text-decoration: none; }
+
+#lighting-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#lighting-tips-page a {
   text-decoration: none; }
 
 #local-produce-tips-page .content-section {
@@ -656,12 +691,42 @@ header {
 #local-produce-tips-page a {
   text-decoration: none; }
 
+#more-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#more-tips-page a {
+  text-decoration: none; }
+
+#more-tips-page h6 {
+  margin-top: 25px; }
+
+#more-tips-page ol {
+  margin-top: 10px;
+  margin-bottom: 35px; }
+
+#more-tips-page ol li {
+  line-height: 2rem;
+  margin-left: 5%; }
+
+#more-tips-page a {
+  text-decoration: none; }
+
 #plant-diet-tips-page .content-section {
   margin: 0 10%;
   margin-top: 50px;
   width: 80%; }
 
 #plant-diet-tips-page a {
+  text-decoration: none; }
+
+#solar-panel-tips-page .content-section {
+  margin: 0 10%;
+  margin-top: 50px;
+  width: 80%; }
+
+#solar-panel-tips-page a {
   text-decoration: none; }
 
 #thermostat-tips-page .content-section {
