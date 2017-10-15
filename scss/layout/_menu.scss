@@ -1,0 +1,30 @@
+// ==========================================
+// MENU
+// ==========================================
+
+.menu {
+  background: $color-menu;
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav {
+  @include vertical-align();
+  top: 37.5%;
+}
+
+.nav__item li {
+  @extend h2;
+  color: $color-nav-item;
+  list-style: none;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-nav-item-hover;
+  }
+}

@@ -2,7 +2,13 @@
 // ICONS
 // ==========================================
 
-.arrow {
+.arrow-white {
+  object-fit: contain;
+  width: 55px;
+}
+
+.arrow-black {
+  display: none;
   object-fit: contain;
   width: 55px;
 }
@@ -13,19 +19,6 @@
   height: 40px;
   margin-right: 10px;
   width: 40px;
-
-  &:hover {
-    // border: 1.25px solid $black;
-  }
-
-  &:hover > .hamburger-menu__row {
-    border-bottom: 1.25px solid $black;
-    height: 8px;
-
-    @include m(top) {
-      margin-top: -8px;
-    }
-  }
 }
 
 .hamburger-menu__row {
@@ -47,4 +40,10 @@
     @extend .hamburger-menu__row;
     width: 50%;
   }
+}
+
+.x {
+  display: none;
+  object-fit: contain;
+  width: 55px;
 }
