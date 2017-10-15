@@ -5,12 +5,32 @@
 #profile-page .content-section {
   margin: $margin-page;
   margin-top: $margin-section-vertical;
+  position: relative;
   width: $width-page;
 }
 
 #profile-page .house {
   object-fit: contain;
   width: 100%;
+}
+
+#profile-page .link-lightbulb {
+  height: 53px;
+  left: 17px;
+  position: absolute;
+  top: 185px;
+  width: 73px;
+  z-index: 10;
+}
+
+#profile-page .div-lightbulb {
+  background: $mustard;
+  height: 53px;
+  left: 17px;
+  position: absolute;
+  top: 185px;
+  width: 73px;
+  z-index: -10;
 }
 
 #profile-page .score-value {
