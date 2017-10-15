@@ -157,11 +157,24 @@ function processQuestion(idx) {
 
       firebase.database().ref('users/' + userUid).update({
           quizResults: results,
-          categoryScores: categories
+          categoryScores: categories,
+          totalScore: totalPoints
       });
+
+      //set total score to local storage
+      window.localStorage.setItem("newScore", totalPoints);
 
     $("#gameWrapper").toggleClass("hidden");
     $("#results_button").toggleClass("hidden");
     console.log("done");
   }
 }
+
+//On click of submit button, grab user data and push to firebase.
+$("#results_button").on("click", function(event) {
+
+    event.preventDefault();
+
+    window.location = "profile.html";
+
+});
