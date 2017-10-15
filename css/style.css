@@ -408,7 +408,7 @@ template {
   margin: 0;
   padding: 0; }
   * ::selection {
-    background: #f8e2b9; }
+    background: #e1f0df; }
 
 a {
   outline: none; }
@@ -478,9 +478,9 @@ p {
   align-items: center;
   display: flex;
   justify-content: center;
-  border: 1px solid #e9a92f;
+  border: 1px solid #80be78;
   border-radius: 100%;
-  color: #e9a92f;
+  color: #80be78;
   font-weight: 300;
   height: 75px;
   margin: auto;
@@ -501,7 +501,7 @@ input {
   width: 75%; }
 
 .native-ad {
-  background: #292937;
+  background: #1C3144;
   border-radius: 2.5%;
   height: 150px;
   margin-top: 25px;
@@ -524,7 +524,7 @@ input {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    background: #292937;
+    background: #1C3144;
     float: right;
     height: auto;
     margin: 0 5%;
@@ -533,7 +533,7 @@ input {
       color: #fff;
       margin-bottom: 10px; }
     .native-ad__copy a {
-      color: #e9a92f;
+      color: #80be78;
       text-decoration: underline; }
   .native-ad__logo {
     bottom: 7.5px;
@@ -546,7 +546,7 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  background: #e9a92f;
+  background: #80be78;
   height: 80px;
   width: 100%;
   z-index: 20; }
@@ -556,7 +556,7 @@ header {
   text-align: center; }
 
 .menu {
-  background: #e9a92f;
+  background: #80be78;
   display: none;
   height: 100%;
   position: absolute;
@@ -584,7 +584,7 @@ header {
     color: #0b0b0b; }
 
 #home-page {
-  background: #e9a92f; }
+  background: #80be78; }
 
 #home-page header .arrow-white {
   visibility: hidden; }
@@ -624,7 +624,7 @@ header {
 .switch-form {
   margin-top: 25px; }
   .switch-form a {
-    color: #e9a92f;
+    color: #80be78;
     text-decoration: underline; }
 
 #sign-up-page .sign-up-section {
@@ -657,7 +657,7 @@ header {
   -webkit-clip-path: polygon(50% 42%, 0% 100%, 100% 100%); }
 
 #profile-page .div-solar-panel {
-  background: #cacaca;
+  background: #b3b3b3;
   clip-path: polygon(50% 42%, 0% 100%, 100% 100%);
   height: 42%;
   left: 6%;
@@ -693,7 +693,7 @@ header {
   z-index: 10; }
 
 #profile-page .div-faucet {
-  background: #fc3932;
+  background: #ff3737;
   height: 12%;
   left: 30%;
   position: absolute;
@@ -710,7 +710,7 @@ header {
   z-index: 10; }
 
 #profile-page .div-thermostat {
-  background: #4ede31;
+  background: #80be78;
   height: 12%;
   left: 53%;
   position: absolute;
@@ -727,7 +727,7 @@ header {
   z-index: 10; }
 
 #profile-page .div-meat {
-  background: #4ede31;
+  background: #80be78;
   height: 12%;
   left: 6%;
   position: absolute;
@@ -761,7 +761,7 @@ header {
   z-index: 10; }
 
 #profile-page .div-recycle {
-  background: #fc3932;
+  background: #ff3737;
   height: 11%;
   left: 6%;
   position: absolute;
@@ -778,7 +778,7 @@ header {
   z-index: 10; }
 
 #profile-page .div-garbage {
-  background: #4ede31;
+  background: #80be78;
   height: 11%;
   left: 30%;
   position: absolute;
@@ -804,7 +804,7 @@ header {
   z-index: -10; }
 
 #profile-page .score-value {
-  color: #e9a92f;
+  color: #80be78;
   display: block;
   font-size: 5rem;
   font-weight: 700;
