@@ -127,6 +127,8 @@ function showQuestion() {
 }
 
 var results = [];
+var counter = 0;
+var cleanResults = {};
 
 function processQuestion(idx) {
 
@@ -142,10 +144,13 @@ function processQuestion(idx) {
 
 
       results.push({
-          question: myListofQuestions[displayQuestion].question,
-          answers: myListofQuestions[displayQuestion].choices[idx]
+          answers: myListofQuestions[displayQuestion].choices[idx],
+          question: myListofQuestions[displayQuestion].question
       });
 
+      cleanResults[myListofQuestions[displayQuestion].question] = myListofQuestions[displayQuestion].choices[idx];
+
+      counter++;
       displayQuestion++;
       showQuestion();
   }
@@ -156,7 +161,8 @@ function processQuestion(idx) {
       var userUid = window.localStorage.getItem("drawdownToken");
 
       firebase.database().ref('users/' + userUid).update({
-          quizResults: results,
+          //quizResults: results,
+          cleanResults: cleanResults,
           categoryScores: categories,
           totalScore: totalPoints
       });

@@ -58,10 +58,9 @@ PROFILE PAGE
         <div class="div-garbage"></div>
         <a href="transportation-tips.html"><div class="link-car"></div></a>
         <div class="div-car"></div>
-        <span class="score-value">98</span>
+        <span id="overallScore" class="score-value">98</span>
         <span class="score-label">Overall Score</span>
       </div>
-
     </section>
 
 
@@ -73,6 +72,8 @@ PROFILE PAGE
       var userScore = window.localStorage.getItem("newScore");
 
       console.log("User id", userUid, "User total score", userScore);
+
+      document.getElementById("overallScore").innerHTML = userScore;
 
   </script>
 
