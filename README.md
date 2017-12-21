@@ -31,11 +31,6 @@ We believe a future version of Inhabit could help people gain a clearer picture 
 
 We wanted to use APIs to grab carbon emission data. But that was difficult due to the timeline of the hackathon and most were not free. We reset our expectations, creating an outline of what our minimally viable product would look like. We moved forward with building a sign in page, a quiz, a page that reveals the user's score and pages that include specific tips. 
 
-![pic2](images/pt1.png?raw=true "pic 2")
-![pic2](images/pt2.png?raw=true "pic 2")
-![pic2](images/pt3.png?raw=true "pic 2")
-
-
 2. Challenges and Successes
 
 Each of us took on a particular piece of the application. For example, I wrote code to identify app users by implementing Firebase's user authentication & NoSQL cloud database. Separating tasks was key to our success, but we should have tested our code together more often to avoid last minute merge conflicts and errors. 
