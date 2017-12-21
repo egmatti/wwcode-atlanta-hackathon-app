@@ -77,6 +77,8 @@ var myListofQuestions = [
 ];
 
 var firebase;
+
+// Create a variable to reference the database
 var database;
 
 function init() {
@@ -98,8 +100,6 @@ function init() {
 
 init();
 
-
-
 startQuiz();
 
 function startQuiz() {
@@ -114,7 +114,11 @@ function showQuestion() {
   myQuestion = "";
   myQuestion = myQuestion + "<p class='bold center_q'>" + myListofQuestions[displayQuestion].question + "</p>";
   myListofQuestions[displayQuestion].choices.forEach(function(choice) {
-    myQuestion +="<input type='radio' id='" + choice + "' name='" + displayQuestion + "' value='" + choice + "' + class='selectable'><label for='" + choice + "' class='round-button'>" + choice + "</label>";
+    myQuestion +=
+
+  "<label for='" + choice + "' class='round-button'>"+choice+"</label>" +
+        "<input type='radio' id='" + choice + "' name='" + displayQuestion + "' value='" + choice + "' + class='selectable'>"
+        //<label for='" + choice + "' class='round-button'>" + choice + "</label>";
   });
 
   $("#quiz_question").html(myQuestion);
@@ -156,9 +160,10 @@ function processQuestion(idx) {
 
   else {
 
-      //push result to firebase
+      //grab the user's token provided upon signing in by Firebase
       var userUid = window.localStorage.getItem("drawdownToken");
 
+      //this code references a specific location in our database.
       firebase.database().ref('users/' + userUid).update({
           //quizResults: results,
           cleanResults: cleanResults,
